@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.sass'
 
 export default function Home() {
   return (
@@ -74,6 +74,47 @@ export default function Home() {
 
       <header className={styles.kheader}>
         <div className={styles.ktop}>
+          <div className={styles.filldiv}>
+            <a href="#" className={styles.krozalissink}>
+              Rozaliss
+            </a>
+            <div className={styles.topright}>
+              <a href="#" className={styles.topcompte}>Compte Proféssionel ?</a>
+              <a href="#" className={styles.topblog}>Blog</a>
+              <div className={styles.topflag}>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.kbottom}>
+          <div className={styles.filldiv}>
+            <Image src="/src/Logo.png" alt="Eyadaty Logo" width={56} height={56}></Image>
+            <div className={styles.navigations}>
+              <a href="#" className={styles.onenavigationvisited}>Accueil</a>
+              <a href="#" className={styles.onenavigation}>À propos de nous</a>
+              <a href="#" className={styles.onenavigation}>Contactez-nous</a>
+            </div>
+            <div className={styles.searchdiv}>
+              <div className={styles.filldiv}>
+                <input className={styles.headersearch} placeholder="Chercher..." type="text"/>
+                <div className={styles.searchimage}>
+                <Image src="/src/Search.png" alt="Search" width={16} height={16}></Image>
+                </div>
+                
+              </div>
+            </div>
+            <div className={styles.headerbuttons}>
+              <div className={styles.filldiv}>
+                <button className={styles.buttonlogin}>Connexion</button>
+                <button className={styles.buttonregister}>S'inscrire</button>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
+        {/* <div className={styles.ktop}>
           <div className={styles.klink}>
             <p className={styles.krozaliss}>Rozaliss</p>
           </div>
@@ -98,7 +139,7 @@ export default function Home() {
             <div className={styles.kinput}></div>
             <div className={styles.kbuttons}></div>
           </div>
-        </div>
+        </div> */}
       </header>
 
 
