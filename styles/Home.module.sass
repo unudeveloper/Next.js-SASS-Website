@@ -175,7 +175,16 @@ $content-ratio: math.div(147, 1440) * 100%
             
 
             .Headline
+                display: flex
                 @include font-theme($font-size: 72px, $font-color: #1C2126)
                 font-weight: 800
                 letter-spacing: -0.02em
+                height: 228px
+
+            .Text
+                display: flex
+                @include font-theme($font-size: 16px, $font-color: #333B42)
+                height: 48px
+                line-height: 24px
+                width: 536px
 
