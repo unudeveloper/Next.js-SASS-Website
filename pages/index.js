@@ -72,7 +72,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.kheader}>
+      <header className={styles.Header}>
         <div className={styles.ktop}>
           <div className={styles.filldiv}>
             <a href="#" className={styles.krozalissink}>
@@ -110,38 +110,22 @@ export default function Home() {
                 <button className={styles.buttonregister}>S'inscrire</button>
               </div>
             </div>
-          
           </div>
         </div>
-
-        {/* <div className={styles.ktop}>
-          <div className={styles.klink}>
-            <p className={styles.krozaliss}>Rozaliss</p>
-          </div>
-          <div className={styles.kright}>
-            <a href="#" className={styles.klink1}><p className={styles.kprofessional}>Compte Proféssionel ?</p></a>
-            <a href="#" className={styles.klink2}><p>Blog</p></a>
-            <div className={styles.kchangelang}>
-              <div className={styles.kfrflag}>
-                <div className={styles.kfrgroup}>
-                  <div className={styles.kfrflagblue}></div>
-                  <div className={styles.kfrflagwhite}></div>
-                  <div className={styles.kfrflagred}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.kbottom}>
-          <div className={styles.kinner}>
-            <Image src="/Imgs/logo.png" alt="logo" width={56} height={56} className={styles.kimage}></Image>
-            <div className={styles.knavigation}></div>
-            <div className={styles.kinput}></div>
-            <div className={styles.kbuttons}></div>
-          </div>
-        </div> */}
       </header>
+      
+      <div className={styles.Hero}>
+        <div className={styles.filldiv}>
+          <div className={styles.content}>
+            <p className={styles.Headline}>Retrouver la belle vie par une bonne santé.</p>
+            <p className={styles.Text}>Nous éliminons les conjectures pour trouver les bons médecins, hôpitaux et soins pour vous et votre famille.</p>
+          </div>
+          <div className={styles.avatar}>
+            <Image src="/src/avatar.png" alt="Avatar" width={548} height={528}></Image>
+          </div>
+        </div>
 
+      </div>
 
     </div>
 
